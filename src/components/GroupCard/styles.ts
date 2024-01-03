@@ -1,12 +1,16 @@
 import { TouchableOpacity } from "react-native";
+
 import styled, { DefaultTheme } from "styled-components/native";
+import {useTheme} from 'styled-components';
+
 import { UsersThree } from 'phosphor-react-native'
+
 
 export const Container = styled(TouchableOpacity)`
   width: 100%;
   height: 90px;
 
-  background-color: ${({ theme }: DefaultTheme) => theme.COLORS.GRAY_500};
+  background-color: ${() => useTheme().COLORS.GRAY_500};
   border-radius: 6px;
 
   flex-direction: row;
