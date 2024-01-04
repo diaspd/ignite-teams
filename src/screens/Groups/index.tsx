@@ -6,9 +6,10 @@ import { Highlight } from '@components/Highlight';
 import { GroupCard } from '@components/GroupCard';
 
 import { Container } from './styles';
+import { ListEmpty } from '@components/ListEmpty';
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>(['Grupo da Bagunça', 'Meus Amigos'])
+  const [groups, setGroups] = useState<string[]>([])
 
   return (
     <Container>
@@ -22,6 +23,10 @@ export function Groups() {
       <FlatList 
         data={groups}
         keyExtractor={item => item}
+        ListEmptyComponent={() => (
+          <ListEmpty message="Cadastre sua primeira turma!"/>
+        )}
+        contentContainerStyle={groups.length === 0 && { flex: 1}}
         renderItem={({ item }) => (
           <GroupCard 
             title={item} 
