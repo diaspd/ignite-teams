@@ -27,7 +27,7 @@ export function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message="Cadastre sua primeira turma!"/>
         )}
-        contentContainerStyle={groups.length === 0 && { flex: 1, marginTop: -100,}}
+        contentContainerStyle={groups.length === 0 && { flex: 1, marginTop: -100}}
         renderItem={({ item }) => (
           <GroupCard 
             title={item} 

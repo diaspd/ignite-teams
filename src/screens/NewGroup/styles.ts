@@ -14,6 +14,8 @@ export const Container = styled.View`
 export const Content = styled.View`
   flex: 1;
   justify-content: center;
+
+  margin-top: -100px;
 `
 
 export const Icon = styled(UsersThree).attrs(({ theme }: DefaultTheme) => ({
