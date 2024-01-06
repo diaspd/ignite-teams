@@ -1,8 +1,9 @@
-import { Container } from './styles';
+import { Container, Form } from './styles';
 
 import { Header } from '@components/Header';
 import { Highlight } from '@components/Highlight';
 import { ButtonIcon } from '@components/ButtonIcon';
+import { Input } from '@components/Input';
 
 export function Players() {
   return (
@@ -14,7 +15,14 @@ export function Players() {
         subtitle='adicione pessoas e separe os times'
       />
 
-      <ButtonIcon />
+      <Form>
+        <Input 
+          placeholder="Nome do integrante"
+          autoCorrect={false}
+        />
+
+        <ButtonIcon icon="add" type="PRIMARY"/>
+      </Form>
     </Container>
   );
 }
