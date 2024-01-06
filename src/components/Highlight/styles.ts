@@ -1,4 +1,4 @@
-import styled, { DefaultTheme } from "styled-components/native";
+import styled, { useTheme } from "styled-components/native";
 
 export const Container = styled.View`
   width: 100%;
@@ -8,15 +8,15 @@ export const Container = styled.View`
 export const Title = styled.Text`
   text-align: center;
 
-  font-size: ${({ theme }: DefaultTheme) => theme.FONT_SIZE.XL}px;
-  font-family: ${({ theme }: DefaultTheme) => theme.FONT_FAMILY.BOLD};
-  color: ${({ theme }: DefaultTheme) => theme.COLORS.WHITE};
+  font-size: ${() => useTheme().FONT_SIZE.XL}px;
+  font-family: ${() => useTheme().FONT_FAMILY.BOLD};
+  color: ${() => useTheme().COLORS.WHITE};
 `;
 
 export const Subtitle = styled.Text`
   text-align: center;
 
-  font-size: ${({ theme }: DefaultTheme) => theme.FONT_SIZE.MD}px;
-  font-family: ${({ theme }: DefaultTheme) => theme.FONT_FAMILY.REGULAR};
-  color: ${({ theme }: DefaultTheme) => theme.COLORS.GRAY_300};
+  font-size: ${() => useTheme().FONT_SIZE.MD}px;
+  font-family: ${() => useTheme().FONT_FAMILY.REGULAR};
+  color: ${() => useTheme().COLORS.GRAY_300};
 `;

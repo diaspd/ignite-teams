@@ -1,7 +1,6 @@
 import { TouchableOpacity } from "react-native";
 
-import styled, { DefaultTheme } from "styled-components/native";
-import {useTheme} from 'styled-components';
+import styled, { useTheme } from "styled-components/native";
 
 import { UsersThree } from 'phosphor-react-native'
 
@@ -21,14 +20,14 @@ export const Container = styled(TouchableOpacity)`
 `
 
 export const Title = styled.Text`
-  font-size: ${({ theme }: DefaultTheme) => theme.FONT_SIZE.MD}px;
-  color: ${({ theme }: DefaultTheme) => theme.COLORS.GRAY_200};
-  font-family: ${({ theme }: DefaultTheme) => theme.FONT_FAMILY.REGULAR};
+  font-size: ${() => useTheme().FONT_SIZE.MD}px;
+  color: ${() => useTheme().COLORS.GRAY_200};
+  font-family: ${() => useTheme().FONT_FAMILY.REGULAR};
 `
 
-export const Icon = styled(UsersThree).attrs(({ theme }: DefaultTheme) => ({
+export const Icon = styled(UsersThree).attrs(() => ({
   size: 32,
-  color: theme.COLORS.GREEN_700,
+  color: useTheme().COLORS.GREEN_700,
   weight: 'fill',
 }))`
   margin-right: 20px;
