@@ -33,6 +33,7 @@ export function Groups() {
             title={item} 
           />
         )}
+        showsVerticalScrollIndicator={false}
       />
 
       <Button 
