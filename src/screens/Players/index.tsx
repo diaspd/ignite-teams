@@ -10,7 +10,7 @@ import { PlayerCard } from '@components/PlayerCard';
 import { ListEmpty } from '@components/ListEmpty';
 import { Button } from '@components/Button';
 
-import { Container, Form, HeaderList, NumbersOfPlayers } from './styles';
+import { Container, Form, HeaderList, NumberOfPlayers } from './styles';
 
 export function Players() {
   const [team, setTeam] = useState('Time A')
@@ -36,7 +36,7 @@ export function Players() {
 
       <HeaderList>
         <FlatList 
-          data={['Time A', 'Time B', 'Time C', 'Time D', 'Time E', 'Time F']}
+          data={['Time A', 'Time B', 'Time C']}
           keyExtractor={item => item}
           renderItem={({ item }) => (
             <Filter 
@@ -49,9 +49,9 @@ export function Players() {
           showsHorizontalScrollIndicator={false}
         />
 
-        <NumbersOfPlayers>
+        <NumberOfPlayers>
           {players.length}
-        </NumbersOfPlayers>
+        </NumberOfPlayers>
       </HeaderList>
 
       <FlatList 
