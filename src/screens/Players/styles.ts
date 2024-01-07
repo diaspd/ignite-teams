@@ -1,4 +1,4 @@
-import styled, { useTheme } from "styled-components/native";
+import styled, { useTheme, css } from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
@@ -15,4 +15,21 @@ export const Form = styled.View`
   border-radius: 6px;
 
   background-color: ${() => useTheme().COLORS.GRAY_700};  
+`
+
+export const HeaderList = styled.View`
+  width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+
+  margin: 32px 0 12px;
+`
+
+export const NumbersOfPlayers = styled.Text`
+  ${() => css`
+    font-family: ${useTheme().FONT_FAMILY.BOLD};
+    font-size: ${useTheme().FONT_SIZE.SM}px;
+    color: ${useTheme().COLORS.GRAY_200};
+  `}
 `
