@@ -1,8 +1,9 @@
+import { SafeAreaView } from "react-native-safe-area-context";
 import styled, { useTheme } from "styled-components/native";
 
 import { UsersThree } from "phosphor-react-native";
 
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)`
   flex: 1;
   padding: 24px;
 
