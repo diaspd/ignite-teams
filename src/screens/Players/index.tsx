@@ -73,7 +73,7 @@ export function Players() {
       />
 
       <Button 
-        title='Remover Rurma' 
+        title='Remover Grupo' 
         type="SECONDARY" 
       />
     </Container>

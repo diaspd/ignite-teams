@@ -13,7 +13,6 @@ export const Container = styled(TouchableOpacity)`
 
   border-radius: 4px;
   margin-right: 12px;
-  margin-top: 4px;
 
   height: 38px;
   width: 70px;
