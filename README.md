@@ -24,13 +24,13 @@ Clone the project and access the folder.
 
 ```bash
 # Clone the project
-$ git clone 
+$ git clone https://github.com/diaspd/ignite-teams.git
 
 # Install the dependencies
 $ npm install
 
 # Start the application
-$ npm run 
+$ npm run start
 
 ```
 </br>
@@ -49,7 +49,7 @@ This project was developed with the following technologies:
 <br></br>
 
 ## 🔖 Layout
-- [Ignite Teams - Figma]()
+- [Ignite Teams - Figma](https://www.figma.com/community/file/1151864427495057381)
 
 <br></br>
 
