@@ -24,7 +24,7 @@ Clone the project and access the folder.
 
 ```bash
 # Clone the project
-$ git clone 
+$ git clone https://github.com/diaspd/ignite-teams.git
 
 # Install the dependencies
 $ npm install
