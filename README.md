@@ -30,7 +30,7 @@ $ git clone
 $ npm install
 
 # Start the application
-$ npm run 
+$ npm run start
 
 ```
 </br>
