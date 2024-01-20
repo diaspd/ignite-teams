@@ -41,6 +41,7 @@ This project was developed with the following technologies:
 <b>
 - React Native
 - Type Script
+- Expo
 </b>
 
 </br>
