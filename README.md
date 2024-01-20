@@ -47,7 +47,7 @@ This project was developed with the following technologies:
 </br>
 
 ## 📄 Project
-💰 .
+💰 Project made with React Native to learn bases of design system, navigation and local storage on it.
 
 <br></br>
 
